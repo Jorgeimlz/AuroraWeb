@@ -1,6 +1,8 @@
 const express = require('express');
+const res = require('express/lib/response');
 const router = express.Router();
 const path = require('path');
+
 
 // Ruta para la página principal
 router.get('/', (req, res) => {
@@ -9,6 +11,11 @@ router.get('/', (req, res) => {
 
 router.get('/login', (req, res) => {
     res.sendFile('login.html', { root: './public' });
+});
+
+//Ruta para Politicas
+router.get('/politics', (req, res) => {
+    res.sendFile('politics.html', { root: './public' });
 });
 
 // Ruta para la página 'About'

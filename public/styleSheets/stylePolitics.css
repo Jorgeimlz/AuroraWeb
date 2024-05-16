@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: "Barlow", sans-serif; /* Fuente predeterminada */
+    color: white; /* Color del texto para que se vea sobre el fondo oscuro */
+    background-image: url('../images/backPolitic.png'); /* Imagen de fondo */
+    background-size: cover; /* Cubrir toda la página */
+    background-repeat: no-repeat; /* Sin repetición */
+    background-attachment: fixed; /* Fijo en el scroll */
+
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title h1 {
+    font-size: 100px; 
+}
+
+.normas ul {
+    margin-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    padding: 0;
+}
+
+.normas li {
+    flex-basis: calc(50% - 10px); /* Calcula el tamaño de cada elemento en un 50% menos el espacio entre ellos */
+    margin-bottom: 10px; /* Espacio entre las filas */
+}

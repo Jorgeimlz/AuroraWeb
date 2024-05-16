@@ -114,7 +114,15 @@ nav a:hover {
     transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón */
     box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Sombra más pronunciada para un efecto "elevado" */
 }
-
+.socialNet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socialNet img{
+    height: 50px;
+    width: 50px;  
+}
 
 
 /* Pie de página */
