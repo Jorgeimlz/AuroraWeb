@@ -1,0 +1,125 @@
+/* Estilo básico para el cuerpo y el enlace del fondo */
+body {
+    margin: 0;
+    font-family: "Barlow", sans-serif; /* Fuente predeterminada */
+    color: white; /* Color del texto para que se vea sobre el fondo oscuro */
+    background-image: url('../images/barclub.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Cubrir toda la página */
+    background-repeat: no-repeat; /* Sin repetición */
+    background-attachment: fixed; /* Fijo en el scroll */
+    background-blend-mode: darken; /* Oscurecimiento del fondo */
+    background-color: rgba(0,0,0,1); /* Color oscuro aplicado sobre la imagen */
+}
+
+/* Estilos para el contenedor del header */
+.header-container {
+    position: relative; /* Posición relativa para el posicionamiento absoluto del logo */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+/* Estilo para el contenedor del logo */
+.logo-container {
+    position: absolute; /* Posicionamiento absoluto */
+    left: 20px; /* Posición izquierda */
+    z-index: 1000; /* Asegurar que esté sobre otros elementos */
+}
+
+.logo-container img {
+    width: 300px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantener la proporción */
+}
+
+/* Estilos ajustados para la barra de navegación */
+/* Estilos ajustados para la barra de navegación */
+nav {
+    padding: 20px 30px; /* Aumenta el padding para un tamaño mayor */
+    flex-grow: 1; /* Crecer para ocupar espacio disponible */
+    border: none; /* Sin bordes visibles */
+    margin: 10px; /* Margen para separar de otros elementos */
+    background-color: transparent; /* Fondo totalmente transparente */
+    display: flex; /* Utilizar flexbox */
+    justify-content: center; /* Centrar contenido horizontalmente */
+    align-items: center; /* Centrar contenido verticalmente */
+}
+
+nav ul {
+    list-style-type: none; /* Eliminar los marcadores de lista */
+    padding: 0;
+    margin: 0; /* Eliminar margen */
+    display: flex;
+    justify-content: center; /* Alinear enlaces al centro */
+    align-items: center; /* Alinear verticalmente */
+    width: 100%; /* Asegurar que el ul ocupe todo el ancho de la nav */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espacio uniforme entre elementos */
+}
+
+nav a {
+    text-decoration: none; /* No subrayar los enlaces */
+    color: white; /* Color del texto */
+    font-weight: 400; /* Texto en negrita */
+    font-size: 1.1rem; /* Tamaño de la fuente */
+    font-family: "Barlow", sans-serif;
+    transition: border-bottom 0.3s; /* Transición suave para la línea inferior */
+}
+
+nav a:hover {
+    border-bottom: 2px solid red; /* Línea roja al pasar el ratón */
+}
+
+
+/* Estilo del hero, texto central y botón */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura completa de la ventana */
+}
+
+.hero h1 {
+    font-size: 10rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white; /* Hace el texto transparente */
+    background-image: url('../images/barclub.jpg'); /* Cambia esto por tu imagen de fondo deseada */
+    -webkit-background-clip: text; /* Aplica el fondo solo dentro del texto (Solo funciona en WebKit/Blink browsers) */
+    background-clip: text;
+    font-family: 'cooper-black-std', serif;
+    display: inline-block; /* Necesario para que background-clip funcione */
+}
+
+/* Estilo del hero, texto central y botón */
+.hero button {
+    padding: 10px 30px; /* Ajusta el padding para dar una forma más ovalada */
+    font-size: 1rem;
+    color: white;
+    background-color: transparent;
+    border: 2px solid red; /* Borde rojo */
+    border-radius: 50px; /* Hace el botón más ovalado */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transiciones para color de fondo, transformación y sombra */
+    text-transform: uppercase; /* Texto en mayúsculas para un impacto visual más fuerte */
+    font-weight: bold; /* Texto en negrita */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra inicial suave */
+}
+
+.hero button:hover {
+    background-color: darkred; /* Oscurece el botón */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Sombra más pronunciada para un efecto "elevado" */
+}
+
+
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.8); /* Fondo semi-transparente */
+}
